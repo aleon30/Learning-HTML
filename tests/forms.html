@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>My form</title>
+    </head>
+    <body>
+        <form action="action_page.php" method="post">
+            <div>
+                <label for="fname">First Name: </label>
+                <input type="text" id="fname" name="fname" placeholder="write here" required>
+            </div>
+            <br>
+            <div>
+                <label for="lname">Last Name: </label>
+                <input type="text" id="lname" name="lname" placeholder="write here 2" required>
+            </div>
+            <br>
+            <div>
+                <label for="pass">Password: </label>
+                <input type="password" id="pass" name="pass" placeholder="write here 3" required>
+            </div>
+            <br>
+            <div>
+                <label for="email">E-mail: </label>
+                <input type="email" id="email" name="email" placeholder="write here 4" required>
+            </div>
+            <br>
+            <div>
+                <label for="phone">Phone: </label>
+                <input type="tel" id="phone" name="phone" placeholder="write here 5" required>
+            </div>
+            <br>
+            <div>
+                <label for="bday">Birthday: </label>
+                <input type="date" id="bday" name="bday" placeholder="write here 6" required>
+            </div>
+            <br>
+            <div>
+                <label for="num">Quantity: </label>
+                <input type="number" id="num" name="num" placeholder="write here 7" required min="0" max="99" value="1">
+            </div>
+            <br>
+            <div>
+                <label for="title"><b>Title: </b></label>
+                <label for="Mr.">Mr. </label>
+                <input type="radio" id="Mr." name="title" value="Mr.">
+                <label for="Ms.">Ms. </label>
+                <input type="radio" id="Ms." name="title" value="Ms.">
+                <label for="Mrs.">Mrs. </label>
+                <input type="radio" id="Mrs." name="title" value="Mrs.">
+                <label for="Miss">Miss </label>
+                <input type="radio" id="Miss" name="title" value="Miss">
+            </div>
+            <br>
+            <div>
+                <label for="payment">Payment: </label>
+                <select id="payment" name="payment">
+                    <option value="visa">Visa</option>
+                    <option value="mastercard">Mastercard</option>
+                    <option value="amex">American Express</option>
+                </select>
+            </div>
+            <br>
+            <div>
+                <label for="subscribe">Subscribe: </label>
+                <input type="checkbox" id="subscribe" name="subscribe">
+            </div>
+            <br>
+            <div>
+                <input type="reset">
+            </div>
+            <br>
+            <div>
+                <input type="submit">
+            </div>
+        </form>
+    </body>
+</html>
